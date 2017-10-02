@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Reload_Manager", "Reload_Manager\Reload_Manager.vbproj", "{2C74E260-C339-423D-87E1-E3EACE4BC2C0}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "RMSetup", "RMSetup\RMSetup.vdproj", "{A1B69903-9871-42EE-A19D-5C5069158AF5}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DBCusAct", "DBCusAct\DBCusAct.vbproj", "{913C9608-428A-4C06-8737-ED3BD58C14DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C74E260-C339-423D-87E1-E3EACE4BC2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C74E260-C339-423D-87E1-E3EACE4BC2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C74E260-C339-423D-87E1-E3EACE4BC2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C74E260-C339-423D-87E1-E3EACE4BC2C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B69903-9871-42EE-A19D-5C5069158AF5}.Debug|Any CPU.ActiveCfg = Debug
+		{A1B69903-9871-42EE-A19D-5C5069158AF5}.Release|Any CPU.ActiveCfg = Release
+		{913C9608-428A-4C06-8737-ED3BD58C14DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913C9608-428A-4C06-8737-ED3BD58C14DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913C9608-428A-4C06-8737-ED3BD58C14DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913C9608-428A-4C06-8737-ED3BD58C14DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,75 @@
+SET ANSI_NULLS ON
+
+SET QUOTED_IDENTIFIER ON
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[RMDB_Network]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[RMDB_Network](
+	[Network_ID] [int] NOT NULL,
+	[Network] [varchar](50) NOT NULL,
+	[Prefix] [int] NOT NULL,
+	[Balance] [money] NOT NULL,
+	[Last_Update] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_RMDB_Network] PRIMARY KEY CLUSTERED 
+(
+	[Network_ID] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+
+SET ANSI_NULLS ON
+
+SET QUOTED_IDENTIFIER ON
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[RMDB_Number]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[RMDB_Number](
+	[Number_ID] [int] NOT NULL,
+	[Number] [int] NOT NULL,
+	[Terms] [int] NOT NULL,
+	[Last_Reload] [varchar](50) NOT NULL,
+	[Network_ID] [int] NOT NULL,
+ CONSTRAINT [PK_RMDB_Number] PRIMARY KEY CLUSTERED 
+(
+	[Number_ID] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+
+SET ANSI_NULLS ON
+
+SET QUOTED_IDENTIFIER ON
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[RMDB_Reload]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[RMDB_Reload](
+	[Reload_ID] [int] NOT NULL,
+	[Price] [money] NOT NULL,
+	[Time] [varchar](50) NOT NULL,
+	[Date] [varchar](50) NOT NULL,
+	[Account_Balance] [money] NOT NULL,
+	[Status] [varchar](50) NOT NULL,
+	[Number_ID] [int] NOT NULL,
+	[Network_ID] [int] NOT NULL,
+ CONSTRAINT [PK_RMDB_Reload] PRIMARY KEY CLUSTERED 
+(
+	[Reload_ID] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+END
+
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_RMDB_Number_RMDB_Network]') AND parent_object_id = OBJECT_ID(N'[dbo].[RMDB_Number]'))
+ALTER TABLE [dbo].[RMDB_Number]  WITH CHECK ADD  CONSTRAINT [FK_RMDB_Number_RMDB_Network] FOREIGN KEY([Network_ID])
+REFERENCES [dbo].[RMDB_Network] ([Network_ID])
+ON UPDATE CASCADE
+ON DELETE CASCADE
+
+ALTER TABLE [dbo].[RMDB_Number] CHECK CONSTRAINT [FK_RMDB_Number_RMDB_Network]
+
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_RMDB_Reload_RMDB_Number]') AND parent_object_id = OBJECT_ID(N'[dbo].[RMDB_Reload]'))
+ALTER TABLE [dbo].[RMDB_Reload]  WITH CHECK ADD  CONSTRAINT [FK_RMDB_Reload_RMDB_Number] FOREIGN KEY([Number_ID])
+REFERENCES [dbo].[RMDB_Number] ([Number_ID])
+ON UPDATE CASCADE
+ON DELETE CASCADE
+
+ALTER TABLE [dbo].[RMDB_Reload] CHECK CONSTRAINT [FK_RMDB_Reload_RMDB_Number]

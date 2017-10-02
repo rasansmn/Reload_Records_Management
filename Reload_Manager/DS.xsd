@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS" targetNamespace="http://tempuri.org/DS.xsd" xmlns:mstns="http://tempuri.org/DS.xsd" xmlns="http://tempuri.org/DS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DS" msprop:Generator_DataSetName="DS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblReload" msprop:Generator_UserTableName="tblReload" msprop:Generator_RowDeletedName="tblReloadRowDeleted" msprop:Generator_TableClassName="tblReloadDataTable" msprop:Generator_RowChangedName="tblReloadRowChanged" msprop:Generator_RowClassName="tblReloadRow" msprop:Generator_RowChangingName="tblReloadRowChanging" msprop:Generator_RowEvArgName="tblReloadRowChangeEvent" msprop:Generator_RowEvHandlerName="tblReloadRowChangeEventHandler" msprop:Generator_TablePropName="tblReload" msprop:Generator_TableVarName="tabletblReload" msprop:Generator_RowDeletingName="tblReloadRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Reload_ID" msprop:Generator_UserColumnName="Reload_ID" msprop:Generator_ColumnPropNameInRow="Reload_ID" msprop:Generator_ColumnVarNameInTable="columnReload_ID" msprop:Generator_ColumnPropNameInTable="Reload_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInTable="PriceColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnPropNameInRow="_Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInTable="DateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Time" msprop:Generator_UserColumnName="Time" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInTable="TimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Network" msprop:Generator_UserColumnName="Network" msprop:Generator_ColumnPropNameInRow="Network" msprop:Generator_ColumnVarNameInTable="columnNetwork" msprop:Generator_ColumnPropNameInTable="NetworkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Account_Balance" msprop:Generator_UserColumnName="Account_Balance" msprop:Generator_ColumnPropNameInRow="Account_Balance" msprop:Generator_ColumnVarNameInTable="columnAccount_Balance" msprop:Generator_ColumnPropNameInTable="Account_BalanceColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblNumber" msprop:Generator_UserTableName="tblNumber" msprop:Generator_RowDeletedName="tblNumberRowDeleted" msprop:Generator_TableClassName="tblNumberDataTable" msprop:Generator_RowChangedName="tblNumberRowChanged" msprop:Generator_RowClassName="tblNumberRow" msprop:Generator_RowChangingName="tblNumberRowChanging" msprop:Generator_RowEvArgName="tblNumberRowChangeEvent" msprop:Generator_RowEvHandlerName="tblNumberRowChangeEventHandler" msprop:Generator_TablePropName="tblNumber" msprop:Generator_TableVarName="tabletblNumber" msprop:Generator_RowDeletingName="tblNumberRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Number_ID" msprop:Generator_UserColumnName="Number_ID" msprop:Generator_ColumnPropNameInRow="Number_ID" msprop:Generator_ColumnVarNameInTable="columnNumber_ID" msprop:Generator_ColumnPropNameInTable="Number_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Terms" msprop:Generator_UserColumnName="Terms" msprop:Generator_ColumnPropNameInRow="Terms" msprop:Generator_ColumnVarNameInTable="columnTerms" msprop:Generator_ColumnPropNameInTable="TermsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Last_Reload" msprop:Generator_UserColumnName="Last_Reload" msprop:Generator_ColumnPropNameInRow="Last_Reload" msprop:Generator_ColumnVarNameInTable="columnLast_Reload" msprop:Generator_ColumnPropNameInTable="Last_ReloadColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Network" msprop:Generator_UserColumnName="Network" msprop:Generator_ColumnPropNameInRow="Network" msprop:Generator_ColumnVarNameInTable="columnNetwork" msprop:Generator_ColumnPropNameInTable="NetworkColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblNetwork" msprop:Generator_UserTableName="tblNetwork" msprop:Generator_RowDeletedName="tblNetworkRowDeleted" msprop:Generator_TableClassName="tblNetworkDataTable" msprop:Generator_RowChangedName="tblNetworkRowChanged" msprop:Generator_RowClassName="tblNetworkRow" msprop:Generator_RowChangingName="tblNetworkRowChanging" msprop:Generator_RowEvArgName="tblNetworkRowChangeEvent" msprop:Generator_RowEvHandlerName="tblNetworkRowChangeEventHandler" msprop:Generator_TablePropName="tblNetwork" msprop:Generator_TableVarName="tabletblNetwork" msprop:Generator_RowDeletingName="tblNetworkRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Network_ID" msprop:Generator_UserColumnName="Network_ID" msprop:Generator_ColumnPropNameInRow="Network_ID" msprop:Generator_ColumnVarNameInTable="columnNetwork_ID" msprop:Generator_ColumnPropNameInTable="Network_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Network" msprop:Generator_UserColumnName="Network" msprop:Generator_ColumnPropNameInRow="Network" msprop:Generator_ColumnVarNameInTable="columnNetwork" msprop:Generator_ColumnPropNameInTable="NetworkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Prefix" msprop:Generator_UserColumnName="Prefix" msprop:Generator_ColumnPropNameInRow="Prefix" msprop:Generator_ColumnVarNameInTable="columnPrefix" msprop:Generator_ColumnPropNameInTable="PrefixColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Balance" msprop:Generator_UserColumnName="Balance" msprop:Generator_ColumnPropNameInRow="Balance" msprop:Generator_ColumnVarNameInTable="columnBalance" msprop:Generator_ColumnPropNameInTable="BalanceColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Last_Update" msprop:Generator_UserColumnName="Last_Update" msprop:Generator_ColumnPropNameInRow="Last_Update" msprop:Generator_ColumnVarNameInTable="columnLast_Update" msprop:Generator_ColumnPropNameInTable="Last_UpdateColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
